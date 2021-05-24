@@ -37,11 +37,11 @@ class AboutArrays < Neo::Koan
 
     assert_equal [:peanut], array[0,1]
     assert_equal [:peanut, :butter], array[0,2]
-    assert_equal __, array[2,2]
-    assert_equal __, array[2,20]
-    assert_equal __, array[4,0]
-    assert_equal __, array[4,100]
-    assert_equal __, array[5,0]
+    assert_equal [:and, :jelly], array[2,2]
+    assert_equal [:and, :jelly], array[2,20]
+    assert_equal [], array[4,0]
+    assert_equal [], array[4,100]
+    assert_equal nil, array[5,0]
   end
 
   def test_arrays_and_ranges
