@@ -16,7 +16,7 @@ class AboutHashes < Neo::Koan
   def test_accessing_hashes
     hash = { :one => "uno", :two => "dos" }
     assert_equal "uno", hash[:one]
-    assert_equal __, hash[:two]
+    assert_equal "dos", hash[:two]
     assert_equal __, hash[:doesnt_exist]
   end
 
