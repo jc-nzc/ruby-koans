@@ -52,7 +52,7 @@ class AboutHashes < Neo::Koan
 
   def test_hash_keys
     hash = { :one => "uno", :two => "dos" }
-    assert_equal __, hash.keys.size
+    assert_equal 2, hash.keys.size
     assert_equal __, hash.keys.include?(:one)
     assert_equal __, hash.keys.include?(:two)
     assert_equal __, hash.keys.class
