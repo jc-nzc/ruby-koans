@@ -73,7 +73,7 @@ class AboutHashes < Neo::Koan
     assert_equal true, hash != new_hash
 
     expected = { "jim" => __, "amy" => 20, "dan" => 23, "jenny" => __ }
-    assert_equal __, expected == new_hash
+    assert_equal false, expected == new_hash
   end
 
   def test_default_value
