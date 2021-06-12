@@ -86,8 +86,8 @@ class AboutHashes < Neo::Koan
     hash2 = Hash.new("dos")
     hash2[:one] = 1
 
-    assert_equal __, hash2[:one]
-    assert_equal __, hash2[:two]
+    assert_equal 1, hash2[:one]
+    assert_equal "dos", hash2[:two]
   end
 
   def test_default_value_is_the_same_object
