@@ -81,7 +81,7 @@ class AboutHashes < Neo::Koan
     hash1[:one] = 1
 
     assert_equal 1, hash1[:one]
-    assert_equal __, hash1[:two]
+    assert_equal nil, hash1[:two]
 
     hash2 = Hash.new("dos")
     hash2[:one] = 1
