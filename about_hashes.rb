@@ -110,7 +110,7 @@ class AboutHashes < Neo::Koan
     hash[:two] << "dos"
 
     assert_equal ["uno"], hash[:one]
-    assert_equal __, hash[:two]
+    assert_equal ["dos"], hash[:two]
     assert_equal __, hash[:three]
   end
 end
