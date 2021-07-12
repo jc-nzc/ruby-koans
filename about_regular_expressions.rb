@@ -17,7 +17,7 @@ class AboutRegularExpressions < Neo::Koan
   # ------------------------------------------------------------------
 
   def test_question_mark_means_optional
-    assert_equal ab, "abbcccddddeeeee"[/ab?/]
+    assert_equal "ab", "abbcccddddeeeee"[/ab?/]
     assert_equal __, "abbcccddddeeeee"[/az?/]
   end
 
