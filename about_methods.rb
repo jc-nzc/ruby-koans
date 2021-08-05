@@ -65,7 +65,7 @@ class AboutMethods < Neo::Koan
     assert_equal Array, method_with_var_args.class
     assert_equal [], method_with_var_args
     assert_equal [:one], method_with_var_args(:one)
-    assert_equal __, method_with_var_args(:one, :two)
+    assert_equal [:one, :two], method_with_var_args(:one, :two)
   end
 
   # ------------------------------------------------------------------
