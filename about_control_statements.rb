@@ -47,7 +47,7 @@ class AboutControlStatements < Neo::Koan
 
   def test_condition_operators
     assert_equal :true_value, (true ? :true_value : :false_value)
-    assert_equal __, (false ? :true_value : :false_value)
+    assert_equal :false_value, (false ? :true_value : :false_value)
   end
 
   def test_if_statement_modifiers
