@@ -10,7 +10,7 @@ class AboutTriangleProject < Neo::Koan
   end
 
   def test_isosceles_triangles_have_exactly_two_sides_equal
-    assert_equal :isosceles, triangle(3, 4, 4)
+    assert_equal nil, triangle(3, 4, 4)
     assert_equal :isosceles, triangle(4, 3, 4)
     assert_equal :isosceles, triangle(4, 4, 3)
     assert_equal :isosceles, triangle(10, 10, 2)
