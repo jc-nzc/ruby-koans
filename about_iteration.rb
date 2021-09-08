@@ -89,6 +89,10 @@ class AboutIteration < Neo::Koan
 
     # Extra Credit:
     # Describe in your own words what inject does.
+    # inject accumulates as it continues from the index 0, performs the operation
+    # and then continues to the final param in the array
+
+    # [3, 6, 10, 13].inject(0, :+) => 32
   end
 
   def test_all_iteration_methods_work_on_any_collection_not_just_arrays
