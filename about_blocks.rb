@@ -55,7 +55,7 @@ class AboutBlocks < Neo::Koan
 
   def test_methods_can_see_if_they_have_been_called_with_a_block
     assert_equal :with_block, yield_tester { :with_block }
-    assert_equal __, yield_tester
+    assert_equal :no_block, yield_tester
   end
 
   # ------------------------------------------------------------------
