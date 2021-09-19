@@ -61,7 +61,7 @@ end
 
 class AboutScoringProject < Neo::Koan
   def test_score_of_an_empty_list_is_zero
-    assert_equal nil, score([])
+    assert_equal 0, score([])
   end
 
   def test_score_of_a_single_roll_of_5_is_50
