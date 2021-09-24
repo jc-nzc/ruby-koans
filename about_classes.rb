@@ -29,7 +29,7 @@ class AboutClasses < Neo::Koan
     fido = Dog2.new
     fido.set_name("Fido")
 
-    assert_raise(___) do
+    assert_raise(NoMethodError) do
       fido.name
     end
 
