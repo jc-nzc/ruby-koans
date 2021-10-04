@@ -181,7 +181,7 @@ class AboutClasses < Neo::Koan
     array = [1,2,3]
 
     assert_equal "[1, 2, 3]", array.to_s
-    assert_equal __, array.inspect
+    assert_equal "[1, 2, 3]", array.inspect
 
     assert_equal __, "STRING".to_s
     assert_equal __, "STRING".inspect
