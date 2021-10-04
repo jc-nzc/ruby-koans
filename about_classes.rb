@@ -183,7 +183,7 @@ class AboutClasses < Neo::Koan
     assert_equal "[1, 2, 3]", array.to_s
     assert_equal "[1, 2, 3]", array.inspect
 
-    assert_equal __, "STRING".to_s
+    assert_equal "STRING", "STRING".to_s
     assert_equal __, "STRING".inspect
   end
 
