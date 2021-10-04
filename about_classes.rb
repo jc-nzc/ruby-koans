@@ -180,7 +180,7 @@ class AboutClasses < Neo::Koan
   def test_all_objects_support_to_s_and_inspect
     array = [1,2,3]
 
-    assert_equal __, array.to_s
+    assert_equal "[1, 2, 3]", array.to_s
     assert_equal __, array.inspect
 
     assert_equal __, "STRING".to_s
