@@ -6,6 +6,15 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 #   code ...
 # end
 
+class DiceSet
+  def values
+    @values
+  end
+  def roll(numDice)
+    @values = numDice.downto(1).inject([]) { |arr, diceNum| arr << (1..6).to_a.sample }
+  end
+end
+
 class AboutDiceProject < Neo::Koan
   def test_can_create_a_dice_set
     dice = DiceSet.new
