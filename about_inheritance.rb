@@ -40,7 +40,7 @@ class AboutInheritance < Neo::Koan
     chico = Chihuahua.new("Chico")
     assert_equal :happy, chico.wag
 
-    assert_raise(___) do
+    assert_raise(NoMethodError) do
       fido = Dog.new("Fido")
       fido.wag
     end
