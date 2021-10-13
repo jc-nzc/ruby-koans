@@ -51,7 +51,7 @@ class AboutInheritance < Neo::Koan
     assert_equal "yip", chico.bark
 
     fido = Dog.new("Fido")
-    assert_equal __, fido.bark
+    assert_equal "WOOF", fido.bark
   end
 
   # ------------------------------------------------------------------
