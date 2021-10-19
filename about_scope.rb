@@ -30,7 +30,7 @@ class AboutScope < Neo::Koan
     assert_equal :joes_dog, rover.identify
 
     assert_equal true, fido.class != rover.class
-    assert_equal __, Jims::Dog != Joes::Dog
+    assert_equal true, Jims::Dog != Joes::Dog
   end
 
   # ------------------------------------------------------------------
