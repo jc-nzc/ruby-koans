@@ -68,7 +68,7 @@ class AboutScope < Neo::Koan
   end
 
   def test_constants_can_be_looked_up_explicitly
-    assert_equal __, PI == AboutScope.const_get("PI")
+    assert_equal true, PI == AboutScope.const_get("PI")
     assert_equal __, MyString == AboutScope.const_get("MyString")
   end
 
