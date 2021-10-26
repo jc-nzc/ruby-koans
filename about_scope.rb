@@ -69,7 +69,7 @@ class AboutScope < Neo::Koan
 
   def test_constants_can_be_looked_up_explicitly
     assert_equal true, PI == AboutScope.const_get("PI")
-    assert_equal __, MyString == AboutScope.const_get("MyString")
+    assert_equal true, MyString == AboutScope.const_get("MyString")
   end
 
   def test_you_can_get_a_list_of_constants_for_any_class_or_module
