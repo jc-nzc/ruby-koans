@@ -82,7 +82,7 @@ class AboutClassMethods < Neo::Koan
     fido = Dog.new
     fido.name = "Fido"
     assert_equal "Fido", fido.name
-    assert_equal __, Dog.name
+    assert_equal nil, Dog.name
   end
 
   # ------------------------------------------------------------------
