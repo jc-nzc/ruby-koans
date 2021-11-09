@@ -41,7 +41,7 @@ class AboutMessagePassing < Neo::Koan
   def test_classes_can_be_asked_if_they_know_how_to_respond
     mc = MessageCatcher.new
 
-    assert_equal __, mc.respond_to?(:caught?)
+    assert_equal true, mc.respond_to?(:caught?)
     assert_equal __, mc.respond_to?(:does_not_exist)
   end
 
