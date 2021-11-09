@@ -42,7 +42,7 @@ class AboutMessagePassing < Neo::Koan
     mc = MessageCatcher.new
 
     assert_equal true, mc.respond_to?(:caught?)
-    assert_equal __, mc.respond_to?(:does_not_exist)
+    assert_equal false, mc.respond_to?(:does_not_exist)
   end
 
   # ------------------------------------------------------------------
