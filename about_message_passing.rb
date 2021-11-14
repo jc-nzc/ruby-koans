@@ -122,7 +122,7 @@ class AboutMessagePassing < Neo::Koan
     catcher = AllMessageCatcher.new
 
     assert_equal "Someone called foobar with <>", catcher.foobar
-    assert_equal __, catcher.foobaz(1)
+    assert_equal "Someone called foobaz with <1>", catcher.foobaz(1)
     assert_equal __, catcher.sum(1,2,3,4,5,6)
   end
 
