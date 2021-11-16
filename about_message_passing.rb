@@ -151,13 +151,13 @@ class AboutMessagePassing < Neo::Koan
     catcher = WellBehavedFooCatcher.new
 
     assert_equal "Foo to you too", catcher.foo_bar
-    assert_equal __, catcher.foo_baz
+    assert_equal "Foo to you too", catcher.foo_baz
   end
 
   def test_non_foo_messages_are_treated_normally
     catcher = WellBehavedFooCatcher.new
 
-    assert_raise(___) do
+    assert_raise(NoMethodError) do
       catcher.normal_undefined_method
     end
   end
