@@ -178,7 +178,7 @@ class AboutMessagePassing < Neo::Koan
   def test_explicitly_implementing_respond_to_lets_objects_tell_the_truth
     catcher = WellBehavedFooCatcher.new
 
-    assert_equal __, catcher.respond_to?(:foo_bar)
+    assert_equal true, catcher.respond_to?(:foo_bar)
     assert_equal __, catcher.respond_to?(:something_else)
   end
 
