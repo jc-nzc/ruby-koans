@@ -21,6 +21,10 @@ class Proxy
     @messages = []
   end
 
+  def called?(method_name)
+    @messages.include?(method_name)
+  end
+
   # WRITE CODE HERE
 end
 
